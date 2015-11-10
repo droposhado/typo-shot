@@ -22,4 +22,4 @@ You just need to provide a `site.json` file on your website. In the following fo
 
 ## License
 
-[License](LICENSE.md)
+[License](LICENSE)
