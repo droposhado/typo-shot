@@ -8,7 +8,7 @@ def read(file_name):
 
 
 setup(
-    name="Typo Shot!",
+    name="Typo Shot",
     version=typoshot.__version__,
     author="Flaverton Rodrigues Rosa",
     author_email="contato@flaverton.com",
