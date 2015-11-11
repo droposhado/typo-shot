@@ -1,0 +1,21 @@
+language: python
+
+python:
+  - 2.7.10
+  - 2.7
+
+script:
+  - python setup.py build
+  - pyhton setup.py install
+
+after_script:
+  - python --version
+  - pip --version
+
+deploy:
+  provider: pypi
+  user: flavertonrr
+  password:
+    secure: N9TbCYTMQmOZiPvK02CfYxm8M/mjx2wZmTTINCV4z6FGMK7hb68zsWoJRlRozvB/iHkaoiwNZID19mRTOVeMvfyqLjFa32EeL9e127diiXGGTwTP/SAOZ/+JX2GNvFW5pgYzCnq2d2FAPCLJKBFi8dWA8unsCKq2CnQt7x7+DNEtZm11q2QfT6PsEclHGgcY+g2VFGzKanZwLzusGlAxi085oLIowRJbC+McrDpG3scr6kDrbWK5lqEvSVyZzAfTYk36yAMyK/yUhjhw2Zi/tj0a6HIYcHDaU7UGHz0pjFgt5RULuDkrL9XgoeoT8ft44S4dZnGjBtsGQTUmFPCYFwPTO0ktuoAYF7oe3r8bAcxEU2sBEt1aEFkh/MbczT92jsf4taWOylqwYOL37F2PqvBz4O9cW0Vciva+27AH7Yrmt4tR9B/sN5V0rq9YJFzEDVdHyNPsjKC6doXG6vNYA5Fb5q2i+lV1Zb7LHfjkyYoMZ313cKee9OfYbb3UjYIWpPIIQfxPOkRtoGvD4dXE11WWqQrh/jlPg6GDHVnZ0hjDU9vcF/Wa6HRN3g4z049Hxc2dbBWiRQoCJlEb2mlz3z6Ee2tV9cx9nxsPZ9pu8u4pq4ZAO6njtf8o0UobIfr13gds+GjzW+oei6VeQUxEtZoT8pCWcpZARnXaDqk+McE=
+  on:
+    repo: flavertonrr/typo-shot
