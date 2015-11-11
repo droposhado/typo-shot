@@ -19,7 +19,7 @@ setup(
     url="https://github.com/flavertonrr/typo-shot",
     scripts=["typo"],
     packages=["typoshot"],
-    long_description=read('README.md'),
+    long_description=read('README'),
     install_requires=[
         "splinter>=0.7.3",
         "requests>=2.4.3"
