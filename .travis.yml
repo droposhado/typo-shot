@@ -2,11 +2,13 @@ language: python
 
 python:
   - 2.7.10
-  - 2.7
+
+after_script:
+  - pip install -r requirements.txt
 
 script:
   - python setup.py build
-  - pyhton setup.py install
+  - python setup.py install
 
 after_script:
   - python --version
