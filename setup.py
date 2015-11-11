@@ -8,7 +8,7 @@ def read(file_name):
 
 
 setup(
-    name="Typo Shot",
+    name="typo-shot",
     version=typoshot.__version__,
     author="Flaverton Rodrigues Rosa",
     author_email="contato@flaverton.com",
@@ -25,9 +25,9 @@ setup(
         "requests>=2.4.3"
     ],
     classifiers=[
-        "Development Status :: 2 - Pre-Alpha",
         "Topic :: Utilities",
         "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python",
         "Programming Language :: Python :: 2.7"
     ]
 )
