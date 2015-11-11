@@ -1,0 +1,49 @@
+Typo Shot!
+==========
+
+.. |Build Status| image:: https://travis-ci.org/flavertonrr/typo-shot.svg
+   :target: https://travis-ci.org/flavertonrr/typo-shot
+
+Typo is a script to take screenshot on your website/blog. A simple way to check typography, viewing the page in complete.
+
+You just need to provide a ``site.json`` file on your website. In the following format:
+
+::
+
+    {
+      "pages": [
+        {
+          "title": "Title",
+          "url": "http://url.com"
+        },
+        {
+          "title": "Title",
+          "url": "http://url.com"
+        },
+        ...
+      ]
+    }
+
+Usage
+---------
+
+::
+
+    typo http://flaverton.com
+
+    typo <url>
+
+Reference
+---------
+
+`Classifiers`_
+
+.. _Classifiers: https://pythonhosted.org/an_example_pypi_project/setuptools.html
+
+License
+-------
+
+`License`_
+
+.. _License: LICENSE.txt
+
